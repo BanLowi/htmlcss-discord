@@ -8,6 +8,7 @@
 :root {
     --header-bg: #3161e0;
     --w-text: white;
+    --last-dw-button: #8ea1e1;
 }
 
 /* utilities */
@@ -66,6 +67,10 @@ main {
     padding: 3rem;
 }
 
+.XL {
+    text-align: center;
+}
+
 .b-container {
     background-color: aqua;
     height: 100%;
@@ -78,7 +83,6 @@ main {
     section {
         padding-top: 2rem;
         width: 20%;
-        align-items: center;
         font-size: 0.9rem;
         h2 {
             font-size: 2rem;
@@ -92,6 +96,51 @@ main {
         }
 
     }
+
+}
+
+.last-container {
+    background-color: aqua;
+    height: 100%;
+    min-width: 80%;
+    margin: auto;
+    padding: 1rem;
+    min-width: 80%;
+    text-align: center;
+
+    section {
+        padding-top: 2rem;
+        font-size: 0.9rem;
+
+        h2 {
+            font-size: 2rem;
+            line-height: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+    &> p {
+        background-image: url(../img/stars.svg);
+        background-size: cover;
+        margin: 0;
+        height: 20%;
+        
+    }
+
+
+    button {
+        background-color: var(--last-dw-button);
+        color: var(--w-text);
+        border-radius: 15px;
+        padding: 0.2rem 1rem;
+        border: none;
+        font-weight: bold;
+     }
 
 }
 

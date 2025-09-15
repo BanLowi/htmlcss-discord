@@ -279,3 +279,20 @@ main {
     }
 
 }
+
+/* Wave */
+
+.wave {
+    background-color: var(--bg-grey);
+    height: 100px;
+    margin: 0;
+}
+
+.mask {
+    mask-image: url(../img/wave.svg);
+    mask-repeat: no-repeat;
+}
+
+.reverse {
+    transform: scaleY(-1);
+}

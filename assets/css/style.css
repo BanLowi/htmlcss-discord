@@ -62,10 +62,20 @@ main {
 
 .b-container {
     background-color: aqua;
-    height: 400px;
-    width: 50%;
+    height: 100%;
+    width: 100%;
     margin: auto;
-    padding: 2rem;
+
+    section {
+        padding-top: 2rem;
+        width: 30%;
+
+        h2 {
+            font-weight: bold;
+        }
+
+    }
+
 }
 
 .c-align {
@@ -79,8 +89,42 @@ main {
 
 .jumbotron {
     background-image: url(../img/jumbo.png);
-    background-size: contain;
+    background-size: cover;
     padding: 3rem;
+}
+
+.j-container {
+    color: white;
+    height: 100%;
+    width: 50%;
+    margin: auto;
+}
+
+.j-section{
+     h1 {
+        padding-bottom: 2rem;
+        font-size: 2rem;
+     }
+
+     p {
+    padding-bottom: 1rem;
+    font-size: 0.8rem;
+    max-width: 486px;
+    margin: auto;    
+     }
+
+     button {
+        border-radius: 20px;
+        padding: 0.5rem 1rem;
+        border: none;
+        font-weight: bold;
+     }
+
+     :last-child {
+        background-color: aquamarine;
+        color: white;
+     }
+
 }
 
 .image {

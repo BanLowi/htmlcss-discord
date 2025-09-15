@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* utilities */
+
+.d-flex {
+    display: flex;
+}
+
+.debug *{
+    border: 1px dashed black;
+}
+
+/* header */
+
+header {
+    background-color: blueviolet;
+}
+
+.h-align {
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+/* body */
+
+main {
+    align-items: center;
+}
+
+.s-container {
+    background-color: aqua;
+    height: 200px;
+    width: 50%;
+    margin: auto;
+    padding: 3rem;
+}
+
+.b-container {
+    background-color: aqua;
+    height: 400px;
+    width: 50%;
+    margin: auto;
+    padding: 2rem;
+}
+
+.c-align {
+    text-align: center;
+}
+
+.main-section {
+    padding: 3rem;
+    background-color: aquamarine;
+}
+
+.image {
+    height: 100%;
+    width: 90%;
+    background-color: black;
+}
+
+.b-image {
+    height: 80%;
+    width: 100%;
+    background-color: black;
+}
+
+/* footer */
+
+.footer-section {
+    background-color: aqua;
+}
+
+.b-section {
+    padding-right: 1rem;
+    width: 100%;
+}
+
+
+

@@ -81,7 +81,6 @@ main {
 }
 
 .b-container {
-    height: 100%;
     margin: auto;
     padding: 1rem;
 
@@ -105,7 +104,6 @@ main {
 }
 
 .last-container {
-    height: 100%;
     min-width: 80%;
     margin: auto;
     padding: 1rem;
@@ -172,7 +170,7 @@ main {
 
 .j-container {
     color: var(--w-text);
-    height: 100%;
+    height: 400px;
     width: 50%;
     margin: auto;
 }
@@ -205,7 +203,6 @@ main {
 }
 
 .image {
-    height: 100%;
     width: 90%;
     background-color: black;
 }
@@ -227,6 +224,11 @@ main {
     width: 100%;
     color: white;
     
+
+    img {
+        padding-top: 1rem;
+    }
+    
 }
 
 .footer-container {
@@ -234,6 +236,7 @@ main {
     width: 80%;
     margin: auto;
     padding: 1rem;
+    border-bottom: 1px solid black;
     
     section {
         padding-top: 2rem;

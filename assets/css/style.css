@@ -104,10 +104,8 @@ main {
 }
 
 .last-container {
-    min-width: 80%;
     margin: auto;
     padding: 1rem;
-    min-width: 80%;
     text-align: center;
 
     section {
@@ -232,11 +230,10 @@ main {
 }
 
 .footer-container {
-    height: 100%;
     width: 80%;
     margin: auto;
     padding: 1rem;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(54, 54, 56);
     
     section {
         padding-top: 2rem;
@@ -266,6 +263,21 @@ main {
 
 .ita-logo {
     height: 1rem;
+}
+
+.space-bw {
+    justify-content: space-between;
+    margin-top: 1rem;
+    
+    button{
+        background-color: var(--last-dw-button);
+        color: var(--w-text);
+        border-radius: 15px;
+        padding: 0.2rem 1rem;
+        border: none;
+        font-weight: bold;
+    }
+
 }
 
 

@@ -9,9 +9,9 @@
     --header-bg: #3161e0;
     --w-text: white;
     --last-dw-button: #8ea1e1;
-    --bg-grey:  #80808013;
+    --bg-grey: #80808013;
     --footer-bg: #23272a;
-    --footer-h3: #6e84d0;
+    --footer-h: #6e84d0;
     --debug-bg: green;
 }
 
@@ -25,14 +25,43 @@
     justify-content: center;
 }
 
-.debug *{
+.container {
+    margin: auto;
+    width: 80%;
+}
+
+.img-resize {
+    width: 60%;
+    max-width: 50%;
+}
+
+.ita-logo {
+    height: 1rem;
+}
+
+.space-bw {
+    justify-content: space-between;
+    margin-top: 1rem;
+
+    button {
+        background-color: var(--last-dw-button);
+        color: var(--w-text);
+        border-radius: 15px;
+        padding: 0.2rem 1rem;
+        border: none;
+        font-weight: bold;
+    }
+
+}
+
+.debug * {
     border: 1px dashed black;
 
     .b-container {
         background-color: var(--debug-bg);
     }
 
-    .last-container{
+    .last-container {
         background-color: var(--debug-bg);
     }
 
@@ -42,7 +71,7 @@
 
 header {
     background-color: var(--header-bg);
-    
+
     button {
         border-radius: 20px;
         padding: 0.5rem 1rem;
@@ -55,11 +84,11 @@ nav {
     align-content: center;
 
     a {
-    color: var(--w-text);
-    text-decoration: none;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    font-size: 0.8rem;
+        color: var(--w-text);
+        text-decoration: none;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        font-size: 0.8rem;
     }
 
 }
@@ -70,24 +99,24 @@ nav {
     padding: 1rem;
 }
 
-/* body */
+/* main */
 
 main {
     align-items: center;
 }
 
-.main-section {
+.block {
     padding: 3rem;
 }
 
-.b-container {
-    margin: auto;
+.theme {
     padding: 1rem;
 
     section {
         padding-top: 2rem;
         width: 20%;
         font-size: 0.9rem;
+
         h2 {
             font-size: 2rem;
             line-height: 2.5rem;
@@ -103,8 +132,7 @@ main {
 
 }
 
-.last-container {
-    margin: auto;
+.theme-b {
     padding: 1rem;
     text-align: center;
 
@@ -124,7 +152,7 @@ main {
         }
     }
 
-    &> p {
+    &>p {
         background-image: url(../img/stars.svg);
         background-size: 100%;
         margin: auto;
@@ -145,60 +173,53 @@ main {
         border: none;
         font-weight: bold;
         margin-top: 2rem;
-     }
-
-}
-
-.img-resize {
-    width: 60%;
-    max-width: 50%;
+    }
 }
 
 .grey-bg {
     background-color: var(--bg-grey);
 }
 
-
 .jumbotron {
+    color: var(--w-text);
+    height: 600px;
+    width: 50%;
+    margin: auto;
+
+    .j-section {
+        h1 {
+            padding-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        p {
+            padding-bottom: 1rem;
+            font-size: 0.8rem;
+            max-width: 486px;
+            margin: auto;
+        }
+
+        button {
+            border-radius: 20px;
+            padding: 0.5rem 1rem;
+            border: none;
+            font-weight: bold;
+        }
+
+        :last-child {
+            background-color: #23272a;
+            color: white;
+        }
+    }
+}
+
+.jumbotron-bg {
     background-image: url(../img/jumbo.png);
     background-size: cover;
     padding: 3rem;
     text-align: center;
 }
 
-.j-container {
-    color: var(--w-text);
-    height: 400px;
-    width: 50%;
-    margin: auto;
-}
-
-.j-section{
-     h1 {
-        padding-bottom: 2rem;
-        font-size: 2rem;
-     }
-
-     p {
-    padding-bottom: 1rem;
-    font-size: 0.8rem;
-    max-width: 486px;
-    margin: auto;    
-     }
-
-     button {
-        border-radius: 20px;
-        padding: 0.5rem 1rem;
-        border: none;
-        font-weight: bold;
-     }
-
-     :last-child {
-        background-color: #23272a;
-        color: white;
-     }
-
-}
 
 .image {
     width: 90%;
@@ -213,40 +234,38 @@ main {
 
 /* footer */
 
-.footer-section {
+.block-f {
     background-color: var(--footer-bg);
 }
 
-.b-section {
+.talk-space {
     padding-right: 1rem;
     width: 100%;
     color: white;
-    
+
 
     img {
         padding-top: 1rem;
     }
-    
+
 }
 
-.footer-container {
-    width: 80%;
-    margin: auto;
+.theme-f {
     padding: 1rem;
     border-bottom: 1px solid rgb(54, 54, 56);
-    
+
     section {
         padding-top: 2rem;
         width: 20%;
         font-size: 0.9rem;
 
         h2 {
-            color: var(--footer-h3);
+            color: var(--footer-h);
             text-align: left;
         }
 
         h3 {
-            color: var(--footer-h3);
+            color: var(--footer-h);
             text-align: left;
         }
 
@@ -260,25 +279,3 @@ main {
     }
 
 }
-
-.ita-logo {
-    height: 1rem;
-}
-
-.space-bw {
-    justify-content: space-between;
-    margin-top: 1rem;
-    
-    button{
-        background-color: var(--last-dw-button);
-        color: var(--w-text);
-        border-radius: 15px;
-        padding: 0.2rem 1rem;
-        border: none;
-        font-weight: bold;
-    }
-
-}
-
-
-

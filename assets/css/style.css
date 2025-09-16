@@ -220,18 +220,6 @@ main {
     text-align: center;
 }
 
-
-.image {
-    width: 90%;
-    background-color: black;
-}
-
-.b-image {
-    height: 80%;
-    width: 100%;
-    background-color: black;
-}
-
 /* footer */
 
 .block-f {
@@ -239,10 +227,8 @@ main {
 }
 
 .talk-space {
-    padding-right: 1rem;
-    width: 100%;
+    padding-right: 10rem;
     color: white;
-
 
     img {
         padding-top: 1rem;
